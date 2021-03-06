@@ -91,30 +91,30 @@
 // matilda.calcAge = nora.calcAge;
 // matilda.calcAge();
 
-var firstName = 'Nora';
-const jonas = {
-  firstName: 'Jonas',
-  year: 1991,
-  calcAge: function () {
-    console.log(this);
-    console.log(2021 - this.year);
-    //solution1
-    // const self = this; //self or that
-    // const isMillenial = function () {
-    //   console.log(self.year >= 1981 && self.year <= 1996);
-    // };
+// var firstName = 'Nora';
+// const jonas = {
+//   firstName: 'Jonas',
+//   year: 1991,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2021 - this.year);
+//     //solution1
+//     // const self = this; //self or that
+//     // const isMillenial = function () {
+//     //   console.log(self.year >= 1981 && self.year <= 1996);
+//     // };
 
-    //solution 2
-    const isMillenial = () => {
-      console.log(this.year >= 1981 && this.year <= 1996);
-    };
-    isMillenial();
-  },
+//     //solution 2
+//     const isMillenial = () => {
+//       console.log(this.year >= 1981 && this.year <= 1996);
+//     };
+//     isMillenial();
+//   },
 
-  greet: () => {
-    console.log(this);
-    console.log(`Hey, is your name ${this.firstName} ?`);
-  },
-};
-jonas.calcAge();
-jonas.greet();
+//   greet: () => {
+//     console.log(this);
+//     console.log(`Hey, is your name ${this.firstName} ?`);
+//   },
+// };
+// jonas.calcAge();
+// jonas.greet();
