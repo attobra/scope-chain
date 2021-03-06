@@ -118,3 +118,22 @@
 // };
 // jonas.calcAge();
 // jonas.greet();
+
+/////////////////////////////
+//PRIMITIVE AND REFERENCE(object) VALLUES
+
+let lastName = 'Williams';
+let oldLastName = 'Williams';
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+const marriedJessica = Object.assign({}, jessica);
+marriedJessica.lastName = 'Davis';
+console.log('before marriage:', jessica);
+console.log('After marriage:', marriedJessica);
